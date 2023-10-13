@@ -45,3 +45,18 @@ thead {
     background-color: var(--light);
     color: var(--darkblue);
 }
+
+.custom-btn {
+    background-color: var(--light);
+    color: var(--darkblue);
+}
+
+.custom-btn:hover {
+    background-color: var(--lightblue);
+    color: var(--darkblue);
+}
+
+.custom-table tbody {
+    background-color: var(--darkblue);
+}
+
