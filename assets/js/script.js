@@ -9,6 +9,11 @@ var hourlyRateInputEl = $('#hourly-rate-input');
 var dueDateInputEl = $('#due-date-input');
 
 
+// handle displaying the time
+function displayTime() {
+    var rightNow = moment().format('MMM DD, YYYY [at] hh:mm:ss a')
+    timeDisplayEl.text(rightNow)
+}
 
 
 
@@ -17,4 +22,4 @@ var dueDateInputEl = $('#due-date-input');
 
 
 
-
+setInterval(displayTime, 1000)
