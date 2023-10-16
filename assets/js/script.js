@@ -57,7 +57,11 @@ function printProjectData(name, type, hourlyRate, dueDate) {
     projectModalEl.modal('hide');
 }
 
-
+function calculateTotalEarnings(rate, days) {
+    var dailyTotal = rate * 8;
+    var total = dailyTotal * days;
+    return total
+}
 
 
 
