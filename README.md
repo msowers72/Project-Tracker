@@ -1,6 +1,5 @@
 # Project-Tracker
 
-
 # Table of Contents
 - [Project-Tracker](#project-tracker)
 - [Table of Contents](#table-of-contents)
@@ -8,7 +7,7 @@
   - [Email](#email)
   - [Description:](#description)
   - [Usage](#usage)
-  - [Dependencies](#dependencies)
+  - [Built-With](#built-with)
   - [Licenses](#licenses)
   - [Deployed](#deployed)
 
@@ -20,20 +19,20 @@
 <msowers72@yahoo.com>
 
 ## Description:
-Today, the global gym industry has an estimated worth of over $96.7 billion dollars, 
-and there are over 37,000 fitness applications, available in the Google Play store.
-I've created a very simple and free fitness application that will allow users to track,
-two different types of workouts. 
+I've created a simple project-traker application that will allow users to track,
+different types of projects. For example, users will be able to add the projects name, type, hourly wage and the projects due date with this application. 
 
 ## Usage
-As a user, I will be able to track my daily cardio and resistance workouts.
-The application tracks, the name, type, weight, sets, reps and the duration of
-your exercises.
+As a user, I will be able to track my daily projects and estimate total earnings from each project.
 
-## Dependencies
-* Express
-* Mongoose
-* Morgan
+## Built-With
+* HTML
+* CSS
+* JavaScript
+* Bootstrap
+* jQuery
+* momentjs
+* Google Fonts
    
 
 ## Licenses 
@@ -41,10 +40,10 @@ your exercises.
 <!-- ![Tux, the Linux mascot](https://img.shields.io/badge/License-MIT-green) -->
   
  ## Deployed
- [Workout Tracker Link](https://young-retreat-50235.herokuapp.com/?id=614d1e2bf18c4e0016de5bcc)
+ [Project Tracker Link](https://msowers72.github.io/Project-Tracker/)
  
  
- ![images](./assets/screenshots/Capture.PNG) 
- ![images](./assets/screenshots/Capture2.PNG) 
+ ![images](./assets/img/stockimg.jpg) 
+ 
 
 
