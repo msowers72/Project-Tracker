@@ -22,7 +22,7 @@ function printProjectData(name, type, hourlyRate, dueDate) {
     
     var projectNameTdEl = $('<td>').addClass('p-2').text(name);
     
-    var projectTypeInputEl = $('<td>').addClass('p-2').text(type);
+    var projectTypeTdEl = $('<td>').addClass('p-2').text(type);
     
     var rateTdEl = $('<td>').addClass('p-2').text(hourlyRate);
     
@@ -30,10 +30,34 @@ function printProjectData(name, type, hourlyRate, dueDate) {
 
     var daysToDate = moment(dueDate, 'MM/DD/YYYY').diff(moment(), 'days');
 
-    var daysLeftTdEl = $('<td>').addClass('p-2').text(daysToDate)
+    var daysLeftTdEl = $('<td>').addClass('p-2').text(daysToDate);
 
-    var totalEarnings = calculateTotalEarnings(hourlyRate, daysToDate)
+    var totalEarnings = calculateTotalEarnings(hourlyRate, daysToDate);
+
+    var totalTdEl = $('<td>')
+        .addClass('p-2')
+        .text('$' + totalEarnings);
+    
+    var deleteProjectBtn = $('<td>')
+        .addClass('p-2 delete-project-btn text-center')
+        .text('X')
+    
+    projectRowEl.append(
+        projectNameTdEl,
+        projectTypeTdEl,
+        rateTdEl,
+        dueDateTdEl,
+        daysLeftTdEl,
+        totalTdEl,
+        deleteProjectBtn
+    );
+
+    projectDisplayEl.append(projectRowEl);
+
+    projectModalEl.modal('hide');
 }
+
+
 
 
 
