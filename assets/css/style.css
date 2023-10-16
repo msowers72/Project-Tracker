@@ -58,5 +58,10 @@ thead {
 
 .custom-table tbody {
     background-color: var(--darkblue);
+    color: var(--light);
 }
 
+
+.delete-project-btn {
+    cursor: pointer;
+}
