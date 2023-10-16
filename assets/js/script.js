@@ -63,6 +63,12 @@ function calculateTotalEarnings(rate, days) {
     return total
 }
 
+function handleDeleteProject(event) {
+    console.log(event.target);
+    var btnClicked = $(event.target);
+    btnClicked.parent('tr').remove();
+}
+
 
 
 
